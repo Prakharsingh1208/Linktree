@@ -1,0 +1,15 @@
+<%if Current.user.tree.nil? %>
+  <p>You don't have a tree yet.</p>
+  <%= button_to "Create your tree", new_tree_path, class: "btn btn-primary", type: "button", method: :get %>
+<% else %>
+  <h2>Your LinkTree</h2>
+  <% tree_new = Current.user.tree %>
+  <p><strong>X:</strong> <%= tree_new.x %></p>
+  <p><strong>YouTube:</strong> <%= tree_new.youtube %></p>
+  <p><strong>LinkedIn:</strong> <%= tree_new.linkedin %></p>
+  <p><strong>Facebook:</strong> <%= tree_new.facebook %></p>
+  <p><strong>WhatsApp:</strong> <%= tree_new.whatsapp %></p>
+  <p><strong>GitHub:</strong> <%= tree_new.github %></p>
+  <%=button_to "Edit Tree",edit_tree_path(tree_new.id),class:"btn btn-outline-primary me-2", type:"button", method: :get if authenticated?%>
+
+<% end %>

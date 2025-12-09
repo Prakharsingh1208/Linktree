@@ -1,0 +1,36 @@
+<%=form_with model: @tree do |form| %>
+  <div class="mb-3">
+    <%= form.label :x, "X Profile URL", for:"exampleInputEmail1", class:"form-label"%>
+    <%= form.text_field :x, placeholder:"Enter you x profile url", class: "form-control",value:Current.user.tree.x  %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :x, "Youtube Profile Url", for:"exampleInputEmail1", class:"form-label"%>
+    <%= form.text_field :youtube, placeholder:"Enter you youtube profile url", class: "form-control",value:Current.user.tree.youtube %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :x, "Linkedin Profile Url", for:"exampleInputEmail1", class:"form-label"%>
+    <%= form.text_field :linkedin, placeholder:"Enter you linkedin profile url", class: "form-control",value:Current.user.tree.linkedin  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :x, "Facebook Profile URL", for:"exampleInputEmail1", class:"form-label"%>
+    <%= form.text_field :facebook, placeholder:"Enter you facebook profile url", class: "form-control",value:Current.user.tree.facebook  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :x, "Whatsaap Profile URL", for:"exampleInputEmail1", class:"form-label"%>
+    <%= form.text_field :whatsapp, placeholder:"Enter you whatsapp profile url", class: "form-control",value:Current.user.tree.whatsapp  %>
+  </div>
+
+  <div>
+    <%= form.label :x, "Github Profile URL", for:"exampleInputEmail1", class:"form-label"%>
+    <%= form.text_field :github, placeholder:"Enter you github profile url", class: "form-control",value:Current.user.tree.github  %>
+  </div>
+
+  <div>
+    <BR>
+    <button class="btn btn-primary" type="submit"><% form.submit%> Submit</button>
+  </div>
+
+<% end %>
