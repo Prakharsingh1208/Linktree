@@ -35,6 +35,7 @@
         <%=button_to "Login",new_session_path,class:"btn btn-outline-primary me-2", type:"button", method: :get unless authenticated?%>
         <%=button_to "Register",session_register_path,class:"btn btn-outline-primary me-2", type:"button", method: :get unless authenticated?%>
         <%=button_to "Logout",session_path,class:"btn btn-outline-primary me-2", type:"button", method: :delete if authenticated?%>
+        <%=button_to "Edit profile",new_user_detail_path,class:"btn btn-outline-primary me-2", type:"button", method: :get if authenticated?%>
         <%= button_to "Create your tree", new_tree_path,class:"btn btn-outline-primary me-2", type:"button", method: :get if authenticated? and Current.user.tree.nil? %>
       </div>
     </div>

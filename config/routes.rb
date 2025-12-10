@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :passwords, param: :token
   resource :user_detail
   get "up" => "rails/health#show", as: :rails_health_check
-  get "home/index"
+  get "home/show"
   get "login", to:"sessions#new"
   root "home#index"
   get "/session/register", to: "sessions#register"

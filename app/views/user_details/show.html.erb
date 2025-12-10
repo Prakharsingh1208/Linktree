@@ -1,0 +1,6 @@
+<h2>Your LinkTree</h2>
+<% tree_new = Current.user.user_detail %>
+<p><strong>X:</strong> <%= tree_new.user_name %></p>
+<p><strong>YouTube:</strong> <%= tree_new.bio %></p>
+<p><strong>LinkedIn:</strong> <%= tree_new.profile_pic %></p>
+<%=button_to "Edit Tree",edit_tree_path(tree_new.id),class:"btn btn-outline-primary me-2", type:"button", method: :get if authenticated?%>

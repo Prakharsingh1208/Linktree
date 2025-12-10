@@ -1,0 +1,20 @@
+<%= form_with method:@user_detail , url:user_detail_url do |form| %>
+  <div class="mb-3">
+    <%= form.label :user_name, "Enter username", for:"exampleInputEmail1", class:"form-label"%>
+    <%= form.text_field :user_name, placeholder:"Enter you x profile url", class: "form-control",value:Current.user.user_detail.user_name %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :bio, "Enter your bio", for:"exampleInputEmail1", class:"form-label"%>
+    <%= form.text_field :bio, placeholder:"Enter you x profile url", class: "form-control",value:Current.user.user_detail.bio  %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :profile_pic, "Enter your profile pic URL", for:"exampleInputEmail1", class:"form-label"%>
+    <%= form.text_field :profile_pic, placeholder:"Enter you x profile url", class: "form-control",value:Current.user.user_detail.profile_pic %>
+  </div>
+
+  <div>
+    <BR>
+    <button class="btn btn-primary" type="submit"><% form.submit%> Submit</button>
+  </div>
+
+<% end %>
