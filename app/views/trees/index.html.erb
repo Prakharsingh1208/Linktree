@@ -11,5 +11,16 @@
   <p><strong>WhatsApp:</strong> <%= tree_new.whatsapp %></p>
   <p><strong>GitHub:</strong> <%= tree_new.github %></p>
   <%=button_to "Edit Tree",edit_tree_path(tree_new.id),class:"btn btn-outline-primary me-2", type:"button", method: :get if authenticated?%>
-
 <% end %>
+<script type="text/babel">
+  const container = document.getElementById('demo');
+  ReactDOM.createRoot(container).render(
+    <h1>Hello, LinkTree!</h1>
+  );
+</script>
+<div id="demo">
+</div>
+<div id="root"></div>
+<%= vite_javascript_tag 'application.jsx' %>
+
+<div id="root"></div>
