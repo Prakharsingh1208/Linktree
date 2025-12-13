@@ -2,13 +2,14 @@
   "private": true,
   "type": "module",
   "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
     "vite": "^5.4.21",
-    "vite-plugin-ruby": "^5.1.1",
-    "@vitejs/plugin-react": "^5.1.2"
+    "vite-plugin-ruby": "^5.1.1"
   },
   "dependencies": {
+    "know": "^1.1.4",
+    "quickly": "^0.1.13",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-
   }
 }

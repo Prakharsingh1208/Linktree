@@ -1,0 +1,38 @@
+
+.headingText{
+    font-family: Arial, sans-serif;
+    font-size: 120px;
+    padding: 0px auto;
+    padding-top: 130px;   
+    margin-bottom: 0; 
+}
+.pText{
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    padding-top: 0px;
+    margin-top: 0;
+}
+.mainHomeDiv{
+    width: 50%;
+    padding-left: 100px;
+}
+.formDiv{
+    display: flex;
+}
+.linkInput{
+    width: 30%;
+    height: 60px;
+    border-radius: 15px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.linkButton{
+    width: 30%;
+    height: 60px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: white;
+    background-color: black;
+}
